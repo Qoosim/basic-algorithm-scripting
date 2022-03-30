@@ -11,3 +11,13 @@ console.log(confirmEnding("Bastian", "m"));
 console.log(confirmEnding("Bastian", "ian"));
 console.log(confirmEnding("Alaje", "e"));
 console.log(confirmEnding("Qoosim", "oo"));
+
+function confirmEndingWithEndsWithMethod(str, target) {
+  if (str.endsWith(target)) {
+    return 'Yes';
+  } else {
+    return 'No';
+  }
+}
+console.log(confirmEndingWithEndsWithMethod("Adekunle", 'le'));
+console.log(confirmEndingWithEndsWithMethod("Ayinde", 'in'));
