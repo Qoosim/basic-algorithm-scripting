@@ -18,3 +18,9 @@ function repeatStringNumTimes2(str, num) {
 }
 
 console.log(repeatStringNumTimes2('bad', 3));
+
+function repeatStringNumTimes3(str, num) {
+  return str.repeat(num);
+}
+
+console.log(repeatStringNumTimes3('good', 4));
