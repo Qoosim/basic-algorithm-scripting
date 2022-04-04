@@ -1,5 +1,5 @@
 const titleCase = (str) => {
-  let splittedWord = str.split(' ');
+  let splittedWord = str.toLowerCase().str.split(' ');
   let finalSentence = '';
   for (let i = 0; i < splittedWord.length; i++) {
     let titleCase = splittedWord[i][0].toUpperCase();
