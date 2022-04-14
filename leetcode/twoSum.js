@@ -1,13 +1,11 @@
 const twoSum = (arr, target) => {
-  let theSum = [];
-  let firstElem = arr[0];
   for (let i = 0; i < arr.length; i++) {
-    if (firstElem + arr[i + 1] === target) {
-      theSum.push(i, i + 1);
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] + arr[j] === target) {
+        return [i, j];
+      }
     }
-    firstElem = arr[i + 1];
   }
-  return theSum;
 }
 
 console.log(twoSum([2, 7, 11, 15], 9));
