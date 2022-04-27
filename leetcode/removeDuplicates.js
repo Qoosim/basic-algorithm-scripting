@@ -19,8 +19,10 @@ const removeDuplicates = (nums) => {
     while(item === nums[index + 1]) {
       nums.splice(index, 1);
     }
+    // return nums; This passes all the tests on leetcode,
+    // but returns undefined here.
   })
-  return nums;
+  return nums; // It returns the expected result on this line
 }
 
 console.log(removeDuplicates([1,1,2]));
