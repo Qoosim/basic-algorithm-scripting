@@ -1,4 +1,6 @@
-const removeDuplicates = (nums) => {
+/* Not all tests is passed with this approach
+ *
+ * const removeDuplicates = (nums) => {
   const sortedArr = nums.sort();
   for (let i = 0; i < sortedArr.length; i++) {
     for (let j = i + 1; j < sortedArr.length; j++) {
@@ -9,6 +11,16 @@ const removeDuplicates = (nums) => {
     }
   }
   return sortedArr;
+}
+*/
+
+const removeDuplicates = (nums) => {
+  nums.forEach((item, index) => {
+    while(item === nums[index + 1]) {
+      nums.splice(index, 1);
+    }
+  })
+  return nums;
 }
 
 console.log(removeDuplicates([1,1,2]));
