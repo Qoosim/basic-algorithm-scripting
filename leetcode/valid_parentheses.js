@@ -59,7 +59,7 @@ const isValidParentheses = (str) => {
     } else {
       // pop the last open bracket off of the stack,
       // if the value at that brackets key in the brackets map
-      // is not equal to the given bracket c, return false
+      // is not equal to the given bracket bk, return false
       if (brackets[stack.pop()] !== bk) return false;
     }
   }

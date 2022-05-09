@@ -26,7 +26,7 @@ const removeElem = (nums, val) => {
 console.log(removeElem([3,2,2,3], 3));
 console.log(removeElem([0,1,2,2,3,0,4,2], 2));
 
-// Another approach
+// One more approach
 const removeElems = (nums, val) => {
   while(nums.includes(val)) {
     nums.splice(nums.indexOf(val), 1);
