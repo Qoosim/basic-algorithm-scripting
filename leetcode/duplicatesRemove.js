@@ -5,6 +5,11 @@ const duplicatesRemove = (nums) => {
     }
   })
   return nums;
+  /*
+  const setNums = new Set(nums);
+  const result = new Set([...setNums].filter((val) => setNums.has(val)));
+  return Array.from(result);
+  */
 }
 
 console.log(duplicatesRemove([1,1,2]));
