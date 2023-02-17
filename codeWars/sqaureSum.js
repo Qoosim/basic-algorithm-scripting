@@ -1,5 +1,5 @@
 const squareSum = (numbers) => {
-    return numbers.reduce((acc, curr) => acc + curr * curr, 0);
+    return numbers.reduce((acc, curr) => acc + curr**2, 0);
 }
 
 console.log(squareSum([1,2])); // 5
