@@ -1,6 +1,6 @@
 const cascading_subset = (list, n) => {
   const result = []
-  for (let i = 0; i <= list.length - n; i++) {
+  for (let i = 0; i <= list.length - n; i++) { 
     result.push(list.slice(i, i + n))
   }
   return result
