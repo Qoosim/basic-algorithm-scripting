@@ -1,6 +1,4 @@
 const rps = (p1, p2) => {
-//  const firstPlayer = prompt("Player 1: ")
- // const secondPlayer = prompt("Player 2: ")
   let result = "";
 
   if ((p1 === "rock" && p2 === "scissors") ||
