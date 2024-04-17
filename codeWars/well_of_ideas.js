@@ -26,19 +26,3 @@ console.log(wellIdeas(['bad', 'bad', 'bad']))
 console.log(wellIdeas(['good', 'bad', 'bad', 'bad', 'bad']))
 console.log(wellIdeas(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']))
 
-/**
-  
-
-  //
-//
-//
-if ((arr.includes("good").length === 1) ||
-      (arr.includes("good").length === 2)) {
-    result = "Publish!"
-  } else if (arr.includes("good").length > 2) {
-    result = "I smell a series!"
-  } else {
-    result = "Failed!"
-  }
-
-  */
