@@ -1,7 +1,6 @@
 const sentenceSmash = (arr) => {
-  if (arr.length === 0) return ""
-  const sentenceForm = arr.toString().split(",").join(" ").trim()
-  return sentenceForm
+  //return arr.length === 0 ? "" : arr.toString().split(",").join(" ").trim()
+  return arr.join(" ").trim()
 }
 
 console.log(sentenceSmash([]))
