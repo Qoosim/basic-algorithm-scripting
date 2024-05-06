@@ -14,7 +14,7 @@ console.log(differenceInAges1([82, 15, 6, 38, 35])) // [6, 82, 76]
 console.log(differenceInAges1([57, 99, 14, 32])) // [14, 99, 85]
 
 
-// the second solution is better cos it it has time omplexity of O(n) 
+// the second solution is better cos it it has time complexity of O(n) 
 //because it iterates through the array only twice to find the minimum and maximum ages.
 function minAge(age) {
   let min = Infinity;
@@ -44,6 +44,7 @@ console.log(differenceInAges2([82, 15, 6, 38, 35])) // [6, 82, 76]
 console.log(differenceInAges2([57, 99, 14, 32])) // [14, 99, 85]
 
 
+// This solution is better
 const differenceInAges3 = (ages) => {
  let youngest = ages[0]
  let oldest = ages[0]
@@ -60,6 +61,7 @@ const differenceInAges3 = (ages) => {
 console.log(differenceInAges3([82, 15, 6, 38, 35])) // [6, 82, 76]
 console.log(differenceInAges3([57, 99, 14, 32])) // [14, 99, 85]
 
+// This solution is the best
 const differenceInAges4 = (ages) => {
   let min = Math.min(...ages)
   let max = Math.max(...ages)
